@@ -1,0 +1,196 @@
+#top_panel {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-bottom: 1px solid rgba(86, 91, 98, 0.8);
+	z-index: 9999;
+	/*height:38px;*/
+	padding-bottom:2px;
+}
+#top_panel .top_panel_content {
+	margin: 0 20px;
+	padding: 0;
+	position: relative;
+	line-height: initial;
+}
+#top_panel .top_panel_content {
+	padding: 0 0 10px;
+}
+.top_panel_content .links a, .top_panel_content .links span {
+	white-space: nowrap;
+	padding: 10px 0 0;
+	float: left;
+}
+#top_panel .top_panel_content .links {
+	float:left;
+}
+#top_panel .top_panel_content .links span {
+	font-weight: bold;
+}
+#top_panel .top_panel_content .links * {
+	color: #ccc !important;
+	font-size: 13px;
+	margin-right: 18px;
+	font-family: arial, verdana, sans-serif;
+	text-decoration:none;
+}
+#top_panel .top_panel_content .links a:hover {
+	color: #fff !important;
+}
+#top_panel .top_panel_content div#loginblock,
+#top_panel .top_panel_content div#userblock {
+	float: right;
+}
+#userblock {
+	float: right;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	top: 3px;
+	overflow: hidden;
+	cursor: pointer;
+}
+#userblock img.avatar {
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+	border: 1px solid #d1d1d1;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+}
+#userblock .displayname {
+	font-size: 14px;
+	font-family: arial, verdana, sans-serif;
+	font-weight: bold;
+	color: #CCC !important;
+	padding: 7px 10px 6px 0;
+	margin: 0 18px 0 36px;
+	display: block;
+	text-decoration:none;
+}
+#userblock .displayname:hover {
+	color: #fff !important;
+}
+#userblock.active .displayname {
+	color: #000 !important;
+}
+#userblock > div.arrow {
+	background: url(http://muloqot.uz/application/themes/muloqot/images/user-dropdown-arrows.png) no-repeat;
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	right: 3px;
+	top: 6px;
+	overflow: hidden;
+	background-position: 0 -20px;
+}
+#userblock .userpulldown {
+	height: 61px;
+	border-top: 1px solid #e5e5e5;
+	padding: 5px 0;
+	margin-top: 5px;
+}
+#userblock .userpulldown a {
+	display: block;
+	background: none;
+	padding: 3px 0 3px 3px;
+	color: #356AA0;
+	text-decoration: none;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+#userblock .userpulldown a span {
+	background: url(http://muloqot.uz/application/themes/muloqot/images/icons-user-profile.png) no-repeat;
+	display: block;
+	margin: 0 0 1px 2px;
+	font-size: 12px;
+	padding: 2px 5px 2px 28px;
+	height: 14px;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+#userblock a.userblock_pulldown_profile span {
+	background-position: 0 1px;
+}
+#userblock a.userblock_pulldown_settings span {
+	background-position: 0 -16px;
+}
+#userblock a.userblock_pulldown_logout span {
+	background-position: 0 -33px;
+}
+#userblock .userpulldown a:hover {
+	background-color: #CCE6EE;
+}
+#userblock.active {
+	height: 120px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+	behavior: url(http://muloqot.uz/application/themes/muloqot/PIE.htc);
+	background: #fff;
+	border-radius: 4px;
+}
+#loginblock {
+	float: right;
+}
+#loginblock a {
+	color: #ccc !important;
+	margin-left: 10px;
+	font-size:13px;
+	font-family: arial, verdana, sans-serif;
+	padding: 10px 0 0;
+	float: left;
+	text-decoration: none;
+}
+#loginblock a:hover {
+	color: #fff !important;
+}
+body {
+	margin-top: 38px;
+}
+
+#top_panel .linksgroup {
+	display:inline;
+	position:relative;
+}
+#top_panel .linksgroup div {
+	position: absolute;
+	left: -10px;
+	background: rgba(37, 39, 46, 0.9);
+	padding: 44px 10px 0px;
+	width: 120px;
+	border-radius: 0 0 5px 5px;
+	display: none;
+	top: -5px;
+	z-index:0;
+}
+#top_panel .linksgroup > *  {
+	position:absolute;
+	z-index:1;
+	cursor:pointer;
+}
+#top_panel .linksgroup div a {
+	margin-bottom:14px;
+	float:none;
+	display:block;
+	padding:0;
+}
+#top_panel .linksgroup span:hover ~ div,
+#top_panel .linksgroup div:hover,
+#top_panel .linksgroup a:hover ~ div {
+	display:block !important;
+}
+
+@media (max-width: 767px) {
+	#loginblock, #userblock {
+		display: none !important;
+	}
+}
+@media (max-width: 600px) {
+	div.linksgroup {
+		display: none !important;
+	}
+}
